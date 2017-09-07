@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <input class="find_inp" id="find_inp" placeholder="Find">
+
+    <button class="add_contact"  id="add">+</button>
+</div>
+
+<div class="newContact clearfix switch" id="newContact" >
+    <div class="main_new_contact_block clearfix">
+
+        <div class="clearfix">
+            <input type="text" required placeholder="Name" class="input_zone" id="name">
+            <input type="text" required placeholder="Lastname" class="input_zone" id="lastname">
+        </div>
+        <div class="clearfix" id="inputPhone">
+            <input type="tel" pattern="[0-9]{5,10}" name="phone" class="input_zone" placeholder="Phone" id="phone">
+            <!--<button class="new_phone_mail" type="button" id="addPhone">+</button>-->
+        </div>
+        <div class="clearfix" id="inputMail">
+            <input type="email" name="mail" class="input_zone" placeholder="Mail" id="mail">
+            <!--<button class="new_phone_mail" type="button" id="addPhone">+</button>-->
+            <div class="Del_Close_Save clearfix">
+                <button class="save_chan switch" type="button" id="save_chan">Save changes</button>
+                <button class="save" type="button" id="save">Save</button>
+                <button class="close" type="button" id="close">Close</button>
+                <button class="del switch" type="button" id="del">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact_list" id="contact_list">
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

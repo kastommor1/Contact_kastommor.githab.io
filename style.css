@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after,
+.clearfix:before{
+    display: table;
+    content: '';
+}
+.clearfix:after{
+    clear: both;
+}
+
+.header, .newContact, .contact_list div {
+    background-color: #e1e2d0;
+    display: block;
+    box-sizing: border-box;
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid #5f604f;
+
+}
+.find, .add_contact, .save,.close, .del, .new_phone_mail,
+.save_chan{
+    background-color: #5f604f;
+    color: white;
+    font-size: 20px;
+    margin: 10px 10px;
+    padding: 1px 5px;
+}
+
+.del {
+    background-color: red;
+}
+
+.find_inp, .input_zone{
+    font-size: 20px;
+    margin: 10px 10px;
+
+}
+
+.contact_list div {
+    font-size: 20px;
+}
+
+.Del_Close_Save {
+    width: 100%;
+}
+
+.switch{
+    display: none;
+}
+
